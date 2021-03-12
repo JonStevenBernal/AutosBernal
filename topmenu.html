@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Top Menu</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      font-size: 16px;
+    }
+    .header {
+      width: 100%;
+      height: 128px;
+      background-image: url(./assets/carros.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .menu {
+      display: flex;
+      height: inherit;
+      align-items: center;
+    }
+    .menu-item {
+      list-style: none;
+      flex: 1;
+      text-align: center;
+      transition: flex 0.5s;
+    }
+    .menu-item:hover {
+      flex: 8;
+    }
+    .menu-item {
+      width: 100px;
+      height: 100px;
+      background-image: url(./assets/bmw.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .menu-item:nth-of-type(2) {
+      width: 100px;
+      height: 100px;
+      background-image: url(./assets/Ford.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .menu-item:nth-of-type(3) {
+      width: 100px;
+      height: 100px;
+      background-image: url(./assets/renault.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .menu-item:nth-of-type(4) {
+      width: 100px;
+      height: 100px;
+      background-image: url(./assets/volkwager.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  </style>
+
+  <body>
+    <header class="header">
+      <ul class="menu">
+        <a class="menu-item" href="bmw.html" target="mainFrame"></a>
+        <a class="menu-item" href="ford.html" target="mainFrame"></a>
+        <a class="menu-item" href="renault.html" target="mainFrame"></a>
+        <a class="menu-item" href="volkwager.html" target="mainFrame"></a>
+      </ul>
+    </header>
+  </body>
+</html>
